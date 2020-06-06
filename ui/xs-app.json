@@ -1,0 +1,14 @@
+{
+	"welcomeFile": "index.html",
+	"authenticationMethod": "route",
+	"routes": [{
+		"source": "^/CurrentUserDefectWithAppRouter_js_dest/(.*)$",
+		"destination": "CurrentUserDefectWithAppRouter_js_dest",
+		"target": "$1",
+		"authenticationType": "xsuaa",
+		"csrfProtection": true
+	}, {
+		"source": "^/(.*)$",
+		"localDir": "resources/webapp"
+	}]
+}
